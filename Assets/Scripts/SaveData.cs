@@ -20,7 +20,6 @@ public class SaveData : MonoBehaviour
     void checkIndex()
     {
         indexer = PlayerPrefs.GetInt("dataIndex");
-        print(indexer);
 
         if (PlayerPrefs.GetString("my_feeling_" + indexer).Length != 0 &&
             /*PlayerPrefs.GetString("my_joint_" + indexer).Length != 0 &&*/
@@ -29,13 +28,16 @@ public class SaveData : MonoBehaviour
             PlayerPrefs.GetString("my_myday_" + indexer).Length != 0
             )
         {
-            PlayerPrefs.SetInt("dataIndex", (indexer + 1));
+            indexer++;
+            PlayerPrefs.SetInt("dataIndex", (indexer));
 
         }
+        print(indexer);
+
     }
     void Start()
     {
-
+        //PlayerPrefs.DeleteAll();
         checkIndex();
     }
 
@@ -118,10 +120,11 @@ public class SaveData : MonoBehaviour
             + (System.DateTime.Now.Month).ToString() + "."
             + (System.DateTime.Now.Year).ToString() +
             System.Environment.NewLine + System.Environment.NewLine;
-        datosCSV += "All records, Gender, General feeling question, general feeling answer, time" +
-            "Morning feeling question, morning feeling answer, time" +
-            "Fatigue question, Fatigue answer, time"+
-            "MyDay question, MyDay answer, time"+System.Environment.NewLine;
+        datosCSV += "All records, Gender,"+
+            "General feeling question, general feeling answer, time," +
+            "Morning feeling question, morning feeling answer, time," +
+            "Fatigue question, Fatigue answer, time,"+
+            "MyDay question, MyDay answer, time,"+System.Environment.NewLine;
 
         for (int i = 0; i <= indexer; i++)
         {
@@ -194,8 +197,8 @@ public class SaveData : MonoBehaviour
 
         mail.From = new MailAddress("noreply@onthelinesoftworks.com");
        // mail.To.Add("unfpa@onthelinesoftworks.com");
-       /* mail.CC.Add("hasan.gharaibeh@onthelinesoftworks.com");
-        mail.CC.Add("canadian.agak@gmail.com");*/
+       /* mail.CC.Add("hasan.gharaibeh@onthelinesoftworks.com");*/
+        mail.CC.Add("canadian.agak@gmail.com");
         mail.To.Add("swehu1988@gmail.com");
 
          

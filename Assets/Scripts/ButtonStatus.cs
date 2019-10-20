@@ -16,7 +16,7 @@ public class ButtonStatus : MonoBehaviour
         foreach (GameObject btn in enableBtn)
             btn.SetActive(true);
 
-        
+
     }
 
 }
