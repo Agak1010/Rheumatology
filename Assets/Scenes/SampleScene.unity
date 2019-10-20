@@ -3453,6 +3453,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3524,6 +3525,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4977f6cd80ab48488d1e8a08b313bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &539630040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3700,7 +3713,7 @@ MonoBehaviour:
   disableBtn:
   - {fileID: 1088641703}
   - {fileID: 800605286}
-  - {fileID: 697944190}
+  - {fileID: 1445478163}
   - {fileID: 1337675962}
   - {fileID: 198022586}
   - {fileID: 1638031157}
@@ -4349,6 +4362,12 @@ MonoBehaviour:
   - {fileID: 782228968}
   - {fileID: 850637013}
   - {fileID: 953434677}
+  _data: {fileID: 534669906}
+  isGeneral: 0
+  isJoint: 0
+  isMorning: 0
+  isFatigue: 1
+  isDay: 0
 --- !u!1 &705107555
 GameObject:
   m_ObjectHideFlags: 0
@@ -7826,6 +7845,12 @@ MonoBehaviour:
   - {fileID: 1294568023}
   - {fileID: 1979367102}
   - {fileID: 1544460141}
+  _data: {fileID: 534669906}
+  isGeneral: 1
+  isJoint: 0
+  isMorning: 0
+  isFatigue: 0
+  isDay: 0
 --- !u!1 &1096957286
 GameObject:
   m_ObjectHideFlags: 0
@@ -9286,6 +9311,12 @@ MonoBehaviour:
   - {fileID: 46557668}
   - {fileID: 2056755513}
   - {fileID: 1245941222}
+  _data: {fileID: 534669906}
+  isGeneral: 0
+  isJoint: 0
+  isMorning: 0
+  isFatigue: 0
+  isDay: 1
 --- !u!1 &1345855801
 GameObject:
   m_ObjectHideFlags: 0
@@ -10088,6 +10119,12 @@ MonoBehaviour:
   disableBtn:
   - {fileID: 1790250103}
   - {fileID: 705107555}
+  _data: {fileID: 534669906}
+  isGeneral: 0
+  isJoint: 0
+  isMorning: 1
+  isFatigue: 0
+  isDay: 0
 --- !u!1 &1476864338
 GameObject:
   m_ObjectHideFlags: 0
@@ -11381,6 +11418,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  _data: {fileID: 534669906}
+  isGeneral: 0
+  isJoint: 1
+  isMorning: 0
+  isFatigue: 0
+  isDay: 0
 --- !u!1 &1659988410
 GameObject:
   m_ObjectHideFlags: 0
