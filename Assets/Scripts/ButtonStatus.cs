@@ -7,6 +7,7 @@ public class ButtonStatus : MonoBehaviour
     public GameObject[] disableBtn;
     public GameObject[] enableBtn;
 
+
     public void ButtonEnabler()
     {
         foreach (GameObject btn in disableBtn)
@@ -15,5 +16,7 @@ public class ButtonStatus : MonoBehaviour
         foreach (GameObject btn in enableBtn)
             btn.SetActive(true);
 
+        
     }
+
 }
