@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\BrowseURL.cs" />
     <Compile Include="Assets\Scripts\ButtonStatus.cs" />
     <Compile Include="Assets\Scripts\MultipleChoice.cs" />
+    <Compile Include="Assets\Scripts\SaveData.cs" />
     <Compile Include="Assets\Scripts\SendReport.cs" />
     <Compile Include="Assets\Scripts\TimerEnabler.cs" />
     <None Include="Assets\JSON\readme.txt" />
