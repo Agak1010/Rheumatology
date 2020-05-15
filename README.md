@@ -2,7 +2,10 @@ Rheumatology
 
 # About This Project
 
-This is a  ....
+Rheumatology App
+
+UNITY 18.3.4
+
 
 # Features 
 
